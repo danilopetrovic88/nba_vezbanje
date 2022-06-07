@@ -12,6 +12,12 @@ use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth')->only('logout');
+    }
+
     public function getRegistrationForm() {
         return view('auth.register');
     }
