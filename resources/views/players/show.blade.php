@@ -10,7 +10,7 @@
             <div class="col-10 offset-1">
                 <div class="card">
                     <div class="card-header">
-                        <h4><b>Player name: </b>{{ $player->first_name }} {{ $player->last_name }}</h4>
+                        <h4 style="text-transform: capitalize"><b>Player name: </b>{{ $player->first_name }} {{ $player->last_name }}</h4>
                     </div>
                     <div class="card-body">
                         <p><b>Email: </b>{{ $player->email }}</p>
